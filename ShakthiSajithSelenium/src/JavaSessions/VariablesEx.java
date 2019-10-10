@@ -4,7 +4,7 @@ public class VariablesEx {
 
 	public static void main(String[] args) 
 	{
-	//This is the commit changes
+	//This is a local copy not commited yet
 	}
 
 }
