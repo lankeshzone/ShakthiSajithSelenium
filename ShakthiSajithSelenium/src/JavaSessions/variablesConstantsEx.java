@@ -1,12 +1,11 @@
 package JavaSessions;
 
+
 public class variablesConstantsEx 
 {
 	static short s;
 	
 	static byte b;
-	
-	
 	
 	static char c = 'L';  //"\0"
 	
@@ -17,6 +16,13 @@ public class variablesConstantsEx
 	static double d;
 	
 	static float f;
+
+	
+	//constants - final
+	
+	//final <datatype> constantname = value;
+	
+	static final float pi = 3.14f;
 	
 	
 	public static void main(String[] args) 
@@ -24,6 +30,8 @@ public class variablesConstantsEx
 	
 		//syntax for creating variables
 		//<data type> <name>;
+		
+		
 		
 		int balance = 100;
 		
@@ -33,7 +41,9 @@ public class variablesConstantsEx
 
 		System.out.println("this is short data type : " + s);
 		
-		System.out.println("this is short data type : " + c);	
+		System.out.println("this is character data type : " + c);	
+		
+		System.out.println("this is Constant data type : " + pi);	
 		
 	}
 
