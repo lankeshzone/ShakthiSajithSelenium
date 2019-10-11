@@ -1,6 +1,7 @@
 package JavaSessions;
 
-public class VariablesEx {
+public class VariablesEx 
+{
 
 	public static void main(String[] args) 
 	{
