@@ -1,0 +1,48 @@
+Constructors  - is used to initialize anything when an object is created...
+
+==> same name as class name
+==> it is a type of method..
+3) gets executed whenever an object is created...
+4) there is no return type
+5) if constructor is used outside the class then the modifier should be public... (clarity)
+6) more than constructor
+
+Syntax...
+<public> classname(parameter)
+{
+//statements
+}
+
+Ex...
+student()
+{
+university = "Delhi university";
+}
+
+types of contructore
+deafult ==> JVM 
+classname()
+{
+}
+student()
+{
+}
+
+n-arg constructor
+student(String s1)
+{
+university = s1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

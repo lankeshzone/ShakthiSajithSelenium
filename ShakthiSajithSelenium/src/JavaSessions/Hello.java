@@ -7,6 +7,8 @@ public class Hello {
 		//print the message that is given inside the double inverted quotes
 		System.out.println("Hello This is check");
 		
+		Student lankesh = new Student();
+		
 	}
 
 }

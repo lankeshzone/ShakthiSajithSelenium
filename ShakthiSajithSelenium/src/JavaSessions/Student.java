@@ -22,11 +22,12 @@ public class Student
 		// creating objects of student class
 		//classname objectname = new  <constructor>();
 		Student sakthi = new Student();
+		Student s3 = new Student();
 		
 		sakthi.roll = 1;
 		sakthi.name = "Sakthi Y";
 		sakthi.Dept = "AI";
-		Student.University = "Delhi University";
+		//Student.University = "Delhi University";
 		
 		System.out.println("Student RollNumber " + sakthi.roll);
 		System.out.println("Student Name " + sakthi.name);
@@ -34,20 +35,33 @@ public class Student
 		System.out.println("Student Fees " +  sakthi.calc_fee(1000,200));
 		System.out.println("University " +  Student.University);
 		
-		Student sajith = new Student();
+		Student sajith = new Student("Madras University");
 			
 		sajith.roll = 2;
 		sajith.name = "SaJith K Y";
 		sajith.Dept = "DS";
-		Student.University = "Bangalore University";
+		//Student.University = "Bangalore University";
 		
 		System.out.println("Student RollNumber " + sajith.roll);
 		System.out.println("Student Name " + sajith.name);
 		System.out.println("Student Dept " + sajith.Dept);
 		System.out.println("Student Fees " +  sajith.calc_fee(1230,230));
-		System.out.println("University Name " +  Student.University);
+		System.out.println("University  " +  Student.University);
 		
 		
 	}
 
+	
+	Student()
+	{
+		University = "Kanpur University";
+		System.out.println("Iam called");
+	}
+	
+	
+	public Student(String str)
+	{
+		University = str;
+		System.out.println("Iam called 2nd constructor " + str);
+	}
 }
