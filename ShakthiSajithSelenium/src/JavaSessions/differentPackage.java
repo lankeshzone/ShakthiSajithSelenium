@@ -14,8 +14,8 @@ public class differentPackage {
 		
 		//System.out.println("Private is " + m.b); is private so cannot accesed
 		
-		System.out.println("Defailt is " + m.c);
-		System.out.println("Protected is " + m.d);
+	//	System.out.println("Defailt is " + m.c);
+	//	System.out.println("Protected is " + m.d);
 		
 	}
 

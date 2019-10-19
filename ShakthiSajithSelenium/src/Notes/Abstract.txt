@@ -1,0 +1,51 @@
+Abstraction - Incomeplete in nature..
+
+40 topics ==> 
+Exception and collections (Sakthi)
+
+Sajith is 100% ready for taking project... (Complete)
+
+sakthis is 80% ready ... but ot able to pick project..(incompleted)
+Two topics which are incomplete are refered to as abstract methods
+
+
+implementation
+==> listening to video
+==> recap of session
+==> google..
+
+abstract class student
+{
+
+public void calcfee()
+{
+	fee = tf + sf + af;
+}
+
+//main method
+
+//abstract method
+abstract public void fetchbook();
+
+}
+
+
+1) abstract keyword should be used to create abstract methods
+2) abstract method do not have method body(code to implement)
+3) n-number of abstract methods can be their in a class
+4) if their is an abstract method in a class then the class itself becomes abstract... use abstract keyword infront of class...
+5) an object of abstract class is not possible..
+6) can run the abstract class as a normal class
+7) abstract methods will be implemented in a child class..
+
+
+
+
+
+
+
+
+
+
+
+
