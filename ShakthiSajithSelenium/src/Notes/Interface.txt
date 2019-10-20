@@ -1,0 +1,21 @@
+Interface ==>
+1) it can contain any number of Abstract methods...
+2) One class implementing more than one interfaces..
+3) it can only contain static members
+4) cannot create an object interface
+5) cannot have contructors...
+
+syntax...
+
+interface <name>
+{
+//statements
+}
+
+Ex..
+interface university
+{
+public void calcfee();
+public void fetchBook();
+abstract public void printbooks();
+}
