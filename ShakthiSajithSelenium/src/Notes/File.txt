@@ -1,0 +1,14 @@
+FIles -
+
+File --> used to create objects of any file application
+FileReader --> used to read information from file (reading character stream)
+FileWriter --> write info on File (Writng character streams)
+
+File INputstream  --> is again used read info from file (Bytes reading)
+FileOutputstream --> writng info on file (Bytes Writing)
+
+
+BufferedReader --> data stream available for reading file info
+BufferedWriter --> used for writing the info
+BufferInputstream --> reading info (Byte reading)
+BufferedOutputStream --> Writing info (Byte writing)
