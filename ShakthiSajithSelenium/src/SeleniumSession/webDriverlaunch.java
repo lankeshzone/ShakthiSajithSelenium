@@ -19,12 +19,12 @@ public class webDriverlaunch {
 		
 		//option-1 using RemoteWebDriver
 		//URL and capabilities
-		URL url = new URL("test"); // the remote nHub URL
-		DesiredCapabilities cap = new DesiredCapabilities();
+		//URL url = new URL("test"); // the remote nHub URL
+		//DesiredCapabilities cap = new DesiredCapabilities();
 		
 		// will engage a connection with GRID to load a node with specified browser config
 		
-		RemoteWebDriver driverremote = new RemoteWebDriver(url, cap); 
+		//RemoteWebDriver driverremote = new RemoteWebDriver(url, cap); 
 		
 		//Option-1 using local browser
 		// will load a browser on the machine where script is loaded
@@ -35,7 +35,7 @@ public class webDriverlaunch {
 		//option-2 is using the WebDriver interface and typecastin
 		
 		// create an instance of RWD(Grid) with Webdriver as a ni dealized browser
-		WebDriver rwdriver = new RemoteWebDriver(url,cap);
+	//	WebDriver rwdriver = new RemoteWebDriver(url,cap);
 		
 		WebDriver ffDriver2 = new FirefoxDriver();
 		

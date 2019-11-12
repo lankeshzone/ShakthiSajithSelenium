@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="ShakthiSajithSelenium/src"/>
+	<classpathentry kind="lib" path="ShakthiSajithSelenium/Lib/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="ShakthiSajithSelenium/Lib/client-combined-3.141.5.jar"/>
+	<classpathentry kind="lib" path="ShakthiSajithSelenium/Lib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="ShakthiSajithSelenium/Lib/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="ShakthiSajithSelenium/Lib/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="ShakthiSajithSelenium/Lib/okio-1.14.0.jar"/>
+	<classpathentry kind="output" path="ShakthiSajithSelenium/bin"/>
+</classpath>
