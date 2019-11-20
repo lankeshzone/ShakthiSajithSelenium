@@ -1,0 +1,53 @@
+Xpath
+//*[@id="app__container"]/main/div/form/div[3]/button
+
+full X-path
+/html/body/div/main/div/form/div[3]/button
+
+CSS
+#app__container > main > div > form > div.login__form_action_container > button
+
+"chroPath"
+
+//a[contains(text(),'User Agreement')]
+
+/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/ul[1]/li[1]/a[1]
+
+body.system-fonts:nth-child(2) footer.footer__base:nth-child(3) div.footer__base__wrapper div:nth-child(2) ul.footer__base__nav-list li:nth-child(1) > a:nth-child(1)
+
+
+x-path ==> path represented in the dom..
+1) Absolute path --> complete representation of an element.. root element... exlement to identified
+/html[1]/body[1]/div[1]/footer[1]/div[1]/div[1]/ul[1]/li[1]/a[1]
+
+2) Relative path
+--> apth which target the exact element you are looking for..
+//a[contains(text(),'User Agreement')]
+
+//a ==> targeted tag  (computer)
+contains ==> method (search)
+parameter1 ==> "text" (search criteria) (name) and (Roll)
+parameter 2 ==> 'user agreement' search value (sajith) and (1)
+
+single attribute
+multiple attribute (and / or conditions)
+//input[@id='password' and @name='session_password']
+By.id("password")
+
+contains
+//a[contains(text(),'User Agreement')]
+==> By.linkText("user agreement")
+
+text()
+//a[text()='User Agreement']
+
+starts-with
+//input[starts-with(@name,'csrf’)]
+
+following
+//input/following::input[11]
+
+//input/preceeding::input[11]
+
+
+
