@@ -1,0 +1,17 @@
+JavaScriptExecutor
+- Interface in Selenium API.. 
+ executescript --> it just waits for javascript to complete the method execution
+ executeAsychScript --> it keeps polling the browser for the status of execution of methid
+
+2 parameters -->
+1--> javascript method itself
+2 --> parameter that you pass to javascript ethod
+
+executeScrupt("document.title;");
+
+one scenarios...
+
+Page object Models
+testNG --> tests, listeners, reports, Assertions
+
+
