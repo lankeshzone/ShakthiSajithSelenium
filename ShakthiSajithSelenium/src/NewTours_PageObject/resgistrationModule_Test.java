@@ -1,5 +1,7 @@
 package NewTours_PageObject;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterGroups;
@@ -15,54 +17,34 @@ import org.testng.annotations.Test;
 
 public class resgistrationModule_Test
 {
-// 11 different annotations...
 	
-	
-	@BeforeSuite
-	public void beforesuite()
-	{
-		System.out.println("Iam before suite");
-	}
-	
-	@BeforeGroups
-	public void beforegroup()
-	{
-		System.out.println("Iam before groups");
-	}
-	
-	@BeforeClass
-	public void beforeclass()
-	{
-		System.out.println("Iam before class");
-	}
+	static WebDriver driver;
+	static RegistrationPage rpo;
+	static HomePage hpo;
 	
 	@BeforeTest
 	public void beforetest()
 	{
-		System.out.println("Iam before test");
+		driver = new FirefoxDriver();
 	}
 	
-	@BeforeMethod
-	public void beforemethod()
-	{
-		System.out.println("Iam before method");
-	}
+
 	
 	@Test (priority=0)
 	public void sampleTestOne()
 	{
-		//automation code here...
-		String expected = "Lankesh";
+		driver.get("http://newtours.demoaut.com/mercurywelcome.php");
+		rpo = new RegistrationPage(driver);
+		hpo = new HomePage(driver);
+		//hpo.register_Link("linktext", "REGISTER"); // identify the register ink on the page
 		
-		String actual = "Shakthi";
+		hpo.register_click();
 		
-		//Assert.assertEquals(expected, actual);
 		
-		System.out.println("Iam in test case from first testng file ------------- ");
 	}
 	
 	
-	@Test (priority=1)
+	@Test (priority=1, enabled=false)
 	public void sampleTestTwo()
 	{
 		//automation code here...
@@ -75,7 +57,7 @@ public class resgistrationModule_Test
 		System.out.println("Iam in test case from Second testng file ------------- ");
 	}
 	
-	@Test (priority=2, enabled = true)
+	@Test (priority=2, enabled = false)
 	public void sampleTestThree()
 	{
 		//automation code here...
@@ -88,11 +70,7 @@ public class resgistrationModule_Test
 		System.out.println("Iam in test case from Thrird testng file ------------- ");
 	}
 	
-	@AfterMethod
-	public void aftermethod()
-	{
-		System.out.println("Iam after method");
-	}
+	
 	
 	@AfterTest
 	public void aftertest()
@@ -100,23 +78,6 @@ public class resgistrationModule_Test
 		System.out.println("Iam after test");
 	}
 	
-	@AfterClass
-	public void afterclass()
-	{
-		System.out.println("Iam after class");
-	}
-	
-	@AfterSuite
-	public void aftersuite()
-	{
-		System.out.println("Iam after Suite");
-	}
-	
-	@AfterGroups
-	public void aftergroups()
-	{
-		System.out.println("Iam after groups");
-	}
 	
 	
 	

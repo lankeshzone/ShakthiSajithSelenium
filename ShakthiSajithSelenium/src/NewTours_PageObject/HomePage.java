@@ -15,7 +15,7 @@ public class HomePage
 	//	2) locator value ==> string coming from Test Case
 
 	static WebDriver driver;
-	PageObjectLibrary pol = new PageObjectLibrary();
+	static PageObjectLibrary pol = new PageObjectLibrary();
 	
 	public HomePage(WebDriver d)
 	{
@@ -25,13 +25,18 @@ public class HomePage
 	static WebElement register;
 	//= driver.findElement(By.xpath("//a[contains(text(),'REGISTER')]"));
 	
-	public void register_Link(String locatorType, String locatorValue)
+	public static void register_Link(String locatorType, String locatorValue)
 	{
 		By locator = pol.locator(locatorType,locatorValue);
 		register = driver.findElement(locator);
+		
 	}
 	
 	
-	
+	public void register_click()
+	{
+		register_Link("link", "REGISTER");
+		register.click();
+	}
 	
 }
