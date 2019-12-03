@@ -13,19 +13,24 @@ import org.testng.annotations.BeforeGroups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import Utilities.Driver;
+
+@Listeners(TestNGListeners.ListenerClass.class)
 public class resgistrationModule_Test
 {
 	
 	static WebDriver driver;
 	static RegistrationPage rpo;
 	static HomePage hpo;
+	static Driver d;
 	
 	@BeforeTest
 	public void beforetest()
 	{
-		driver = new FirefoxDriver();
+		d = new Driver();
 	}
 	
 
@@ -33,7 +38,10 @@ public class resgistrationModule_Test
 	@Test (priority=0)
 	public void sampleTestOne()
 	{
-		driver.get("http://newtours.demoaut.com/mercurywelcome.php");
+		driver = d.setupBrowser("firefox", "http://newtours.demoaut.com/mercurywelcome.php");
+		
+		System.out.print(d.checkTitle("Demo automation website", driver));
+		
 		rpo = new RegistrationPage(driver);
 		hpo = new HomePage(driver);
 		//hpo.register_Link("linktext", "REGISTER"); // identify the register ink on the page
