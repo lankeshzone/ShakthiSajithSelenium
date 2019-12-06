@@ -1,14 +1,19 @@
 package Utilities;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Driver
 {
 
 	// choose between the types of browsers
-	public WebDriver setupBrowser(String browser, String url)
+	public WebDriver setupBrowser(String browser, String url) throws MalformedURLException
 	{
 		WebDriver driver = null;
 		
@@ -18,11 +23,24 @@ public class Driver
 			driver = new InternetExplorerDriver();
 			driver.get(url);
 		break;
+		
 		case "firefox":
 			driver = new FirefoxDriver();
 			driver.get(url);
 		break;
 		
+		case "rwd":
+			URL ur = new URL("http://172.20.10.4:4444/wd/hub");
+			
+			DesiredCapabilities cap = new DesiredCapabilities();
+			
+			cap.setBrowserName("chrome");
+			
+			//cap.setPlatform(Platform.WINDOWS);
+			
+			driver = new RemoteWebDriver(ur,cap);
+		
+			
 		
 		}
 		

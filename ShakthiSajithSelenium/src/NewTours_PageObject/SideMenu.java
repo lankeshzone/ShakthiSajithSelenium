@@ -3,6 +3,8 @@ package NewTours_PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import Utilities.PageObjectLibrary;
+
 
 
 public class SideMenu 

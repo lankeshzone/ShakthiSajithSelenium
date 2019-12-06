@@ -1,4 +1,4 @@
-package NewTours_PageObject;
+package Utilities;
 
 import org.openqa.selenium.By;
 
