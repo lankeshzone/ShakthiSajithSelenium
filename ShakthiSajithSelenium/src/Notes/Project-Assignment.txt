@@ -1,0 +1,32 @@
+Automation-Practice
+1) Create a new User
+2) Step-1 user.. loging and observe order summary
+3) FIlter scenaraio is product listing
+4) Checkout of product catalog.
+5) Status of the order after creating couple of transactions
+6) Cart validation
+
+Maven - Project and add dependancies for TestNG/Selenium/Apache-POI
+GitHub - create a repository and note down POM url..
+
+Design Pages 
+--> common elements on the page(TopMenu/SearchCatalog/BottomMenu)
+--> Create Page objects for each pages based on the tests that you automate 
+--> create actions based on pages
+
+Utilities
+--> Driver /excel/ waits/screenshots/dynamicelements (x-path functions)/listeners etc.,
+Tests - automated scripts
+
+TestNG - classes/suites/groups
+TestNG Reports..
+
+Jenkins - COnfigure jdk, Add the POM file ... Execute
+
+http://demo.automationtesting.in/Frames.html
+
+
+phptravels
+--> Searching for particular flight..
+--> Book a flight
+--> Check for SignUp
